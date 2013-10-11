@@ -14,4 +14,5 @@ LOCAL_MODULE := fir
 
 include $(BUILD_HOST_EXECUTABLE)
 
+LOCAL_CFLAGS += -fno-strict-aliasing
 
