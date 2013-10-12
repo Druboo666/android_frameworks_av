@@ -424,7 +424,7 @@ int Visualizer_command(effect_handle_t self, uint32_t cmdCode, uint32_t cmdSize,
             break;
         case VISUALIZER_PARAM_SCALING_MODE:
             ALOGV("get mScalingMode = %d", pContext->mScalingMode);
-            *((uint32_t *)p->data + 1) = pContext->mScalingMode;
+            data[1] = pContext->mScalingMode;
             p->vsize = sizeof(uint32_t);
             *replySize += sizeof(uint32_t);
             break;
