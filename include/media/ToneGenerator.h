@@ -209,6 +209,7 @@ private:
         CEPT,
         NUM_REGIONS
     };
+       static const unsigned char sToneMappingTable[NUM_REGIONS-1][NUM_SUP_TONES];
 
        static constexpr unsigned int TONEGEN_MAX_WAVES = 3;     // Maximun number of sine waves in a tone segment
        static constexpr unsigned int TONEGEN_MAX_SEGMENTS = 12;  // Maximun number of segments in a tone descriptor
