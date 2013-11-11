@@ -130,11 +130,8 @@ ifneq ($(filter caf bfam,$(TARGET_QCOM_AUDIO_VARIANT)),)
         LOCAL_SRC_FILES += LPAPlayer.cpp
         LOCAL_CFLAGS += -DLEGACY_LPA -fno-strict-aliasing
     endif
-<<<<<<< HEAD
-    LOCAL_CFLAGS += -DQCOM_ENHANCED_AUDIO -fno-strict-aliasing
-=======
-    LOCAL_CFLAGS += -DQCOM_ENHANCED_AUDIO -DUSE_LPA_MODE
->>>>>>> 654a405834bc97abb8f7b2f5bc4aa5cefd450a13
+
+    LOCAL_CFLAGS += -DQCOM_ENHANCED_AUDIO -DUSE_LPA_MODE -fno-strict-aliasing
 endif
 
 ifneq ($(TARGET_QCOM_MEDIA_VARIANT),)
