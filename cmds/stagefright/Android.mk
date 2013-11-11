@@ -36,15 +36,12 @@ LOCAL_C_INCLUDES:= \
 	$(TOP)/frameworks/native/include/media/openmax \
 	external/jpeg \
 
-<<<<<<< HEAD
 LOCAL_CFLAGS += -Wno-multichar -fno-strict-aliasing
-=======
-LOCAL_CFLAGS += -Wno-multichar
 ifdef DOLBY_UDC
   LOCAL_C_INCLUDES += $(TOP)/hardware/qcom/media/mm-core/inc
   LOCAL_CFLAGS += -DDOLBY_UDC
 endif #DOLBY_UDC
->>>>>>> 654a405834bc97abb8f7b2f5bc4aa5cefd450a13
+
 
 LOCAL_MODULE_TAGS := debug
 
